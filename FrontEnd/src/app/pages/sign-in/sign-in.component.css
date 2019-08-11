@@ -1,12 +1,16 @@
-body {
-	background: #253B42 !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+@font-face {
+	font-family: title;
+	src: url('../../../assets/fonts/OleoScript-Regular.ttf');
+  }
+
+#pageWrapper {
 	height: 100vh;
-	margin: -20px 0 50px;
+	width: 100%;
+	background-color: #253B42;
+}
+
+#title {
+	font-family: title;
 }
 
 a {
@@ -53,13 +57,7 @@ form {
 	text-align: center;
 }
 
-input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-}
+
 
 .container {
 	background-color: #fff;

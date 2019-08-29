@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms'
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'sign-in',
@@ -9,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
 export class SignInComponent implements OnInit {
 
   public signInForm: FormGroup;
-  public pageInValidState: boolean = true;
+  public pageInValidState = true;
 
     constructor() {}
 
@@ -17,12 +17,12 @@ export class SignInComponent implements OnInit {
       this.signInForm = new FormGroup({
         email: new FormControl('', [Validators.required]),
         password: new FormControl('', [Validators.required])
-      })
+      });
     }
 
     public logIn(): void {
      this.signInForm.valid ? this.pageInValidState = true : this.pageInValidState = false;
       // call login service here.
     }
-    
+
 }
